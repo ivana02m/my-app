@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import {
   BrowserRouter as Router,
   Route, Routes,
@@ -17,7 +17,7 @@ export default function Navbar(){
             <div className="wrapper" style={{ display: 'flex' }}>
               <div className="sidebar">
                 <ul>
-                <li><NavLink to="/" >Home</NavLink></li>
+                  <li><NavLink to="/" >Home</NavLink></li>
                   <li><NavLink to="/about">About</NavLink></li>
                   <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>

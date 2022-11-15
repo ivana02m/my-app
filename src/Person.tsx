@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./person.css";
 
@@ -18,7 +17,6 @@ export const Person = ({ id, name, surname, userType, createdDate, city, address
     onEdit(id, evt.target.name.value, evt.target.surname.value, evt.target.userType.value, evt.target.createdDate.value, evt.target.city.value, evt.target.address.value,);
     setIsEdit(!isEdit);
   };
-
   return (
     <div>
       {isEdit ? (
@@ -37,25 +35,26 @@ export const Person = ({ id, name, surname, userType, createdDate, city, address
         <div className="main_">
           <table className="m">
             <thead>
-            <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>surname</th>
-            <th>user type</th>
-            <th>created date</th>
-            <th>city</th>
-            <th>address</th>
-            </tr>
+              <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>surname</th>
+                <th>user type</th>
+                <th>created date</th>
+                <th>city</th>
+                <th>address</th>
+              </tr>
             </thead>
           <tbody key={id}>
             <tr>
-             <td>{id}</td> 
-             <td>{name}</td> 
-             <td>{surname}</td> 
-             <td>{userType}</td>
-             <td>{createdDate}</td>
-             <td>{address}</td>
-             <td>{city}</td> 
+              <td>{id}</td> 
+              <td>{name}</td> 
+              <td>{surname}</td> 
+              <td>{userType}</td>
+              <td>{createdDate}</td>
+              <td>{city}</td> 
+              <td>{address}</td>
+              
               <button className="ed" onClick={handleEdit}>Edit</button>
               <button className="del"onClick={handleDelete} >Delete</button> 
              </tr>   

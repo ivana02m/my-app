@@ -2,11 +2,9 @@ import axios from "axios";
 import React, { useState, useEffect } from 'react';
 import "./person.css";
 
-
 function Search(){
   const [data,setData ]=useState([]);
   const [value,setValue ]=useState("");
-
 
   useEffect(()=>{
     loadUsersData();
@@ -18,7 +16,6 @@ function Search(){
       .catch((err)=>console.log(err));
       
     };
-      
     console.log("data", data);
 
     const handleSearch=async(e:any)=>{
@@ -30,7 +27,6 @@ function Search(){
     })
     .catch((err)=>console.log(err));
      };
-
    return(
     <div>
       <div>
@@ -94,9 +90,7 @@ function Search(){
               </div>
           </div>
        </div>
-    </div>
-       
-             
+    </div>        
 )
-}
+};
 export default Search;

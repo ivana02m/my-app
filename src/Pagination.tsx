@@ -24,9 +24,8 @@ export default function Pagination(){
     const indexOfLastPost= currentPage * postPerPage;
     const indexOfFirstPost= indexOfLastPost - postPerPage;
     const currentPosts=persons.slice(indexOfFirstPost, indexOfLastPost);
-
     const paginate= (pageNum:any)=> setCurrentPage(pageNum);
-
+    
     const prevPage=()=> setCurrentPage(currentPage -1);
     const nextPage=()=> setCurrentPage(currentPage +1);
 
@@ -42,7 +41,6 @@ export default function Pagination(){
             />  
         );
     };
-   //console.log("persons ===>", persons);
    return(
     <>
     <ul className="list-group">

@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import "./person.css";
 
 export const PersonForm = ({ onAdd }:any) => {
@@ -22,6 +22,7 @@ export const PersonForm = ({ onAdd }:any) => {
       <input placeholder="createdDate" name="createdDate"/>
       <input placeholder="city" name="city"/>
       <input placeholder="address" name="address"/>
+
       <button className="ad" onSubmit={handleOnSubmit}>Add</button>
       <hr />
     </form>
